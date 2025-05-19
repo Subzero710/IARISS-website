@@ -374,20 +374,22 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.texte {
-  flex: 1;
-}
-
 .texte h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: #007D80;
 }
 
-.texte p {
+.texte ul {
   font-size: 1.4rem;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #333;
+  padding-bottom: 1rem;
+}
+
+.texte h4 {
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 /* Responsive */
