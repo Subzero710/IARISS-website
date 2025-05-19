@@ -75,14 +75,11 @@
   }
   .intro { 
     text-align: center;
-    font-size: 2.1rem;
-    width: auto;
+    font-size: 3rem;
+    width: 100%;
     color :#FFFAF0;
     padding: 2rem 1rem;
-    background-color: #000000;
-    margin-left: 20rem;
-    border-radius: 20rem;
-    margin-right: 20rem;
+    background-color: #182727;
   }
  .conclusion {
   text-align: center;
@@ -184,14 +181,6 @@
   color: #333;
 }
 
-/* Responsive smartphone */
-@media (max-width: 768px) {
-  .liste-valeurs {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 
   .site-footer {                                           /* Footer */
     background-color: #182727;
@@ -277,12 +266,146 @@
     font-size: 0.8rem;
   }
 
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .nav a {
+
+/* --- Responsive pour mobiles --- */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .intro {
+    margin: 1rem;
+    font-size: 1.4rem;
+    border-radius: 20px;
+  }
+
+  .valeur p {
+    font-size: 1.2rem;
+  }
+
+  .liste-valeurs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .domaines {
+    grid-template-columns: 1fr;
+  }
+  .nav a {
       margin-left: 1rem;
       font-size: 0.9rem;
     }
+
+  .domaine {
+    font-size: 1.2rem;
   }
-  
+
+  .conclusion {
+    font-size: 1.5rem;
+  }
+}
+
+/* --- Responsive for laptop 15–17 --- */
+@media (min-width: 1280px) and (max-width: 1700px) {
+  .intro {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .domaines {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+  max-width: 60%;
+  margin: auto;
+}
+.domaine {
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  background-color: white;
+
+}
+
+.domaine h3, h4{
+  color: #007D80;
+  margin-bottom: 1rem;
+}
+
+.domaine ul {
+  text-align: left;
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+  .valeur p {
+    font-size: 1.3rem;
+  }
+
+  .conclusion {
+    max-width: 900px;
+    font-size: 1.9rem;
+  }
+}
+
+
+
+.domaines-quinconce {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ligne {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ligne:nth-child(even) {
+  flex-direction: row-reverse;
+} 
+
+.image img {
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.texte {
+  flex: 1;
+}
+
+.texte h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007D80;
+}
+
+.texte p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ligne {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image img {
+    max-width: 200px;
+  }
+
+  .texte h3 {
+    font-size: 1.6rem;
+  }
+
+  .texte p {
+    font-size: 1.2rem;
+  }
+}
