@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IARISS - Consulting</title>
+    <link rel="stylesheet" href="prestations.css">
+</head>
+<body>
+      <header class="site-header">
+        <div class="container">
+          <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="logo_img "> IARISS</a>
+          </div>
+          <nav class="nav">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Prestations.html">Prestations</a>
+            <a href="Equipe.html">Équipe</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="contact.html" class="btn-contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+  <div class="content">
+    <section class="intro">
+      <h1> Nos differentes <span>Prestations</span></h1>
+    </section>
+      <section class ="prestations">
+          <h2>Informatique & Reseaux </h2>
+      <div class="prestation">
+          <h3 class="toggle">Intelligence artificielle</h3>
+          <ul class="texte-cache">
+              <li>Création d'un reseau de neurones</li>
+              <li>Entrainement d'un modèle</li>
+              <li>Fine tuning</li>
+          </ul>
+          <div class="chevron">▼</div>
+      </div>
+      <div class="prestation">
+          <h3 class="toggle">Software</h3>
+          <ul class="texte-cache">
+              <li>Conception de logiciels</li>
+              <li>Application mobile sur mesure</li>
+              <li>Conseils et amélioration de vos produits existant</li>
+          </ul>
+          <div class="chevron">▼</div>
+      </div>
+      <div class="prestation">
+        <h3 class="toggle">Web</h3>
+          <ul class="texte-cache">
+              <li>Creation de Site internet</li>
+              <li>Entretien et reparation de vos sites</li>
+              <li>Audit de Cybersécurité Web</li>
+          </ul>
+          <div class="chevron">▼</div>
+      </div>
+      <div class="prestation">
+         <h3 class="toggle">Big Data</h3>
+          <ul class="texte-cache">
+              <li>Data Scraping</li>
+              <li>Gestion et exploitation de base de donnée</li>
+              <li>Business Intelligence</li>
+          </ul>
+          <div class="chevron">▼</div>
+      </div>
+      <div class="prestation">
+         <h3 class="toggle">Réseau</h3>
+          <ul class="texte-cache">
+              <li>Développement d'architectures réseau fiables</li>
+              <li>Audit de sécurité réseau</li>
+          </ul>
+          <div class="chevron">▼</div>
+      </div>
+      </section>
+     <section class="prestations">
+         <h2>Mecanique</h2>
+         <div class="prestation">
+             <h3 class="toggle">Conception & modélisation</h3>
+            <ul class="texte-cache">
+                <li>Modelisation 3D</li>
+                <li>Prototypage de pièces mécaniques</li>
+            </ul>
+             <div class="chevron">▼</div>
+         </div>
+         <div class="prestation">
+             <h3 class="toggle">Simulation</h3>
+            <ul class="texte-cache">
+                <li>Etude des contraintes sur des pièces mecaniques</li>
+                <li>Simulation numérique de résistance des matériaux</li>
+            </ul>
+             <div class="chevron">▼</div>
+         </div>
+             <div class="prestation">
+             <h3 class="toggle">Optimisation industrielle</h3>
+            <ul class="texte-cache">
+                <li>Etude d'Optimisation de la productivité</li>
+                <li>Etude d'amelioration de la qualité</li>
+            </ul>
+             <div class="chevron">▼</div>
+         </div>
+     </section>
+     <section class="prestations">
+         <h2>Automatique et Systemes embarqués</h2>
+         <div class="prestation">
+             <h3 class="toggle">Systemes embarqués</h3>
+            <ul class="texte-cache">
+                <li>Développement de systèmes embarqués</li>
+                <li>Instrumentation, optimisation et commande de systèmes dynamiques</li>
+            </ul>
+             <div class="chevron">▼</div>
+         </div>
+         <div class="prestation">
+             <h3 class="toggle">Programmation Hardware</h3>
+            <ul class="texte-cache">
+                <li>Programmation de composants électroniques</li>
+                <li>Instrumentation, optimisation et commande de systèmes dynamiques</li>
+                <li>Intégration de technologies en électronique, informatique et mécanique</li>
+            </ul>
+             <div class="chevron">▼</div>
+         </div>
+         <div class="prestation">
+             <h3 class="toggle">Robotique</h3>
+            <ul class="texte-cache">
+                <li>Conception de robots et Drones</li>
+                <li>Construction de robots et Drones</li>
+            </ul>
+             <div class="chevron">▼</div>
+         </div>
+     </section>
+      <section class="prestations">
+          <h2>Textile et Fibres</h2>
+       <div class="prestation">
+         <h3 class="toggle">Recherche et Innovation</h3>
+          <ul class="texte-cache">
+              <li>Développement de textiles techniques et composites</li>
+              <li>Recherche et éco-conception de matériaux durables</li>
+          </ul>
+          <div class="chevron">▼</div>
+      </div>
+      <div class="prestation">
+         <h3 class="toggle">Conception</h3>
+        <ul class="texte-cache">
+            <li>Conception de pieces textiles et tissus</li>
+        </ul>
+         <div class="chevron">▼</div>
+     </div>
+      </section>
+  </div>
+<script>
+  document.querySelectorAll('.chevron').forEach((chevron) => {
+    chevron.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const bloc = chevron.closest('.prestation');
+      bloc.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
