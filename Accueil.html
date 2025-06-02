@@ -96,28 +96,28 @@
         <div class="underline"></div>
       <div class="liste-valeurs">
         <div class="valeur">
-          <h3>Sérieux</h3>
-          <p>La priorité de notre structure est de réaliser des projets en complément de notre formation en s'associant avec des entreprises.</p>
+          <h3 class="toggle">Sérieux</h3>
+          <p class="texte-cache">La priorité de notre structure est de réaliser des projets en complément de notre formation en s'associant avec des entreprises.</p>
         </div>
         
         <div class="valeur">
-          <h3>Innovant</h3>
-          <p>Faites confiance au savoir-faire des élèves-ingénieurs de l'ENSISA et participez dès aujourd'hui à la formation des ingénieurs de demain en nous confiant vos projets.</p>
+          <h3 class="toggle">Innovant</h3>
+          <p class="texte-cache">Faites confiance au savoir-faire des élèves-ingénieurs de l'ENSISA et participez dès aujourd'hui à la formation des ingénieurs de demain en nous confiant vos projets.</p>
         </div>
     
         <div class="valeur">
-          <h3>Pluridisciplinaire</h3>
-          <p>IARISS se repose sur les quatre filières de l'ENSISA pour mettre à votre disposition toutes les compétences nécessaires à la réalisation de votre projet.</p>
+          <h3 class="toggle">Pluridisciplinaire</h3>
+          <p class="texte-cache">IARISS se repose sur les quatre filières de l'ENSISA pour mettre à votre disposition toutes les compétences nécessaires à la réalisation de votre projet.</p>
         </div>
     
         <div class="valeur">
-          <h3>Efficace</h3>
-          <p>IARISS bénéficie d'un environnement favorable pour la réalisation de votre projet : laboratoires, enseignants, équipements de haute technologie...</p>
+          <h3 class="toggle">Efficace</h3>
+          <p class="texte-cache">IARISS bénéficie d'un environnement favorable pour la réalisation de votre projet : laboratoires, enseignants, équipements de haute technologie...</p>
         </div>
       </div>
     </section>
     <section class="conclusion">
-      <h2>Pourquoi choisir IARISS ?</h2>
+      <h2>Pourquoi choisir <span>IARISS</span> ?</h2>
       <p class="conclusion-text">Avec une approche pragmatique, pluridisciplinaire et orientée résultat, nos élèves-ingénieurs mettent leur expertise au service de votre projet.</p>
     </section>
     
@@ -159,6 +159,14 @@
     <div class="footer-bottom">
       <p>© 2025 IARISS | Tous droits réservés</p>
     </div>
-  </footer>  
+  </footer>
+<script>
+  document.querySelectorAll('.valeur .toggle').forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      toggle.parentElement.classList.toggle('active');
+    });
+  });
+</script>
+
 </body>
 </html>
