@@ -156,6 +156,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -266,7 +267,26 @@
     padding-top: 1rem;
     font-size: 0.8rem;
   }
+.texte-cache {                          /*Animations*/
+  display: none;
+  transition: all 0.3s ease;
+}
 
+.valeur.active .texte-cache {
+  display: block;
+}
+
+.chevron {
+  text-align: center;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.valeur.active .chevron {
+  transform: rotate(180deg);
+}
 
 /* --- Responsive pour mobiles --- */
 @media (max-width: 768px) {
