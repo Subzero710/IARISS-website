@@ -149,6 +149,91 @@ body {
   margin: 0.8rem auto 1.5rem auto;
   border-radius: 2px;
 }
+  .site-footer {                                           /* Footer */
+    background-color: #182727;
+    color: #FFFAF0;
+    padding: 0rem 2rem 1rem 2rem;
+    font-size : 1.4rem;
+  }
+  .reseaux{
+    flex : 1;
+  }
+  .site-footer .container{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding-top: 1rem;
+    margin: 1rem 0;
+  }
+
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .slogan {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .social-icons a {
+    margin-right: 0.5rem;
+  }
+
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-column ul li a {
+    color: #FFFAF0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-column ul li {
+    color: #FFFAF0;
+  }
+
+  .footer-column a{
+    color: #FFFAF0;
+    text-decoration: none;
+  }
+
+  .footer-column a:hover {
+    color: #09ccc2;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #2b252555;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+
 @media (min-width: 768px) and (max-width: 1700px) {
 
 
