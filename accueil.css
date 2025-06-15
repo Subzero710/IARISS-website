@@ -71,7 +71,7 @@
     height: auto;
     padding-bottom: 50px;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     background-color: #FFFAF0;
   }
   .intro { 
@@ -82,6 +82,9 @@
     padding: 2rem 1rem;
     background-color: #182727;
     margin-bottom : 1rem;
+  }
+  .intro p{
+  margin-top : 1.2rem;
   }
  .conclusion {
   text-align: center;
