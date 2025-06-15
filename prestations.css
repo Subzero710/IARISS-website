@@ -6,41 +6,36 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #FFFAF0;
-  color: #333;
 }
 
-.site-header {
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #FFFAF0;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  z-index: 1000;
+.site-header {                                        /* Header */
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFFAF0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    margin-bottom: 2rem;
 }
 
 .site-header .container {
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
+    font-size : 1.2rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
 }
-
 .logo a {
-  margin-right: auto;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #007D80;
-  text-decoration: none;
+    margin-right: auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007D80;
+    text-decoration: none;
 }
-
 .logo img {
-  height: 40px;
-  vertical-align: middle;
-  margin-right: 0.5rem;
+    height: 40px;
 }
 
 .nav {
@@ -74,12 +69,9 @@ body {
   background-color: #09ccc2;
 }
 
-.content {
-  margin-top: 70px;
+.content {                                                  /* Main Content */
   padding: 2rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items : center;
 }
 
 .intro {
@@ -87,7 +79,7 @@ body {
   background-color: #182727;
   color: #FFFAF0;
   padding: 2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .intro span {
@@ -96,12 +88,15 @@ body {
 
 .prestations {
   padding: 2rem 0;
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  margin: auto;
 }
 
-.prestations h2 {
-  color: #007D80;
-  margin-bottom: 1.5rem;
-  font-size: 2.2rem;
+  h2 {
+  color: #000000;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -112,11 +107,12 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
+  width : 60%;
 }
 
 .prestation h3 {
-  font-size: 1.8rem;
-  color: #007D80;
+  font-size: 2.4rem;
+  color: #332162;
   margin-bottom: 1rem;
   cursor: pointer;
   display: flex;
@@ -128,7 +124,9 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  padding-left: 1.2rem;
+  padding-left: 2rem;
+  font-size : 2rem;
+
 }
 
 .prestation.active .texte-cache {
@@ -144,6 +142,18 @@ body {
 .prestation.active .chevron {
   transform: rotate(180deg);
 }
+.underline {
+  width: 25%;
+  height: 0.25rem;
+  background-color: #c0392b;
+  margin: 0.8rem auto 1.5rem auto;
+  border-radius: 2px;
+}
+@media (min-width: 768px) and (max-width: 1700px) {
+
+
+}
+
 
 @media (max-width: 768px) {
   .intro {
