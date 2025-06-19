@@ -95,8 +95,12 @@
     width : 70%;
     font-size: 3rem;
 }
-.description h2{
-    margin-top: 2rem;
+h2{
+    margin-top: 8rem;
+    padding-bottom: 0.8rem;
+}
+.first{
+    margin-top : 2rem;
 }
 .description span{
     font-weight : bold;
