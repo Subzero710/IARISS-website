@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IARISS - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="logo_img"> IARISS</a>
+      </div>
+      <nav class="nav">
+        <a href="Accueil.html">Accueil</a>
+        <a href="Prestations.html">Prestations</a>
+        <a href="Equipe.html">Équipe</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html" class="btn-contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <section class="intro">
+      <h1>Demande de <span>Devis</span></h1>
+    </section>
+
+    <form id="devis-form">
+      <h2>Ecrivez nous</h2>
+      <p>Si vous souhaitez des renseignements, laissez-nous un message avec votre demande et vos coordonnées et nous vous contacterons dans les plus brefs délais !</p>
+      <div>
+        <label for="entreprise">Nom de votre entreprise</label>
+        <input type="text" id="entreprise" name="entreprise" required>
+      </div>
+      <div>
+        <label for="nom">Nom et prénom</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div>
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="tel">Numéro de téléphone</label>
+        <input type="tel" id="tel" name="tel">
+      </div>
+      <div>
+        <label>Domaine d'application</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="domaines" value="Informatique & Réseaux"> Informatique & Réseaux</label>
+          <label><input type="checkbox" name="domaines" value="Mécanique"> Mécanique</label>
+          <label><input type="checkbox" name="domaines" value="ASE"> Automatique & Systèmes Embarqués</label>
+          <label><input type="checkbox" name="domaines" value="Textile"> Textile</label>
+        </div>
+      </div>
+      <div>
+        <label for="projet">Description de votre projet</label>
+        <textarea id="projet" name="projet" required></textarea>
+      </div>
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </div>
+
+    <footer class="site-footer">
+    <div class="container">
+      <div class="reseaux">
+        <img src="images/logo.png" alt="Logo IARISS" class="footer-logo">
+        <h4>IARISS</h4>
+        <p class="slogan">Entreprise étudiante de l'ENSISA depuis 2008</p>
+        <div class="social-icons">
+          <a href="https://fr.linkedin.com/company/iariss"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://x.com/iariss"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/junioriariss"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/iariss.ensisa"><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Prestations.html">Prestations</a></li>
+          <li><a href="Equipe.html">Équipe</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Adresse</h4>
+        <p>ENSISA Mulhouse<br>12 Rue des Frères Lumière<br>68093 Mulhouse Cedex</p>
+        <br>
+        <h4>Contact</h4>
+        <p><a href="mailto:contact@iariss.fr">contact@iariss.fr</a><br>03 89 33 69 19</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 IARISS | Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+</html>
