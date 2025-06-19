@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family : Helvetica;
 }
 body {
   background-color: #FFFAF0;
@@ -77,54 +78,103 @@ form {                                                  /* Main content */
       flex-direction: column;
       gap: 1.5rem;
       font-size: 1.6rem;
-    }
-    label {
-      font-weight: bold;
-      margin-bottom: 0.3rem;
-    }
-    input, textarea {
-      padding: 0.8rem;
-      font-size: 1.5rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      width: 100%;
-    }
-    textarea {
-      resize: vertical;
-      min-height: 10rem;
-    }
-    .checkbox-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .checkbox-group label {
-      font-weight: normal;
-    }
-    button {
-      background-color: #007D80;
-      color: white;
-      padding: 1rem;
-      font-size: 1.5rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.8s;
-      width: fit-content;
-    }
-    button:hover {
-      background-color: #09ccc2;
-    }
-    .intro {
-      text-align: center;
-      background-color: #182727;
-      color: #FFFAF0;
-      padding: 4rem 2rem 2rem;
-      font-size: 3rem;
-    }
-    .intro span {
-      color: #09ccc2;
-    }
+}
+label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.checkbox-group label {
+  font-weight: normal;
+}
+.checkbox-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.checkbox-card {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  flex: 1 1 45%;
+  max-width: 48%;
+}
+
+.checkbox-card input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-card span {
+  color: #333;
+}
+
+.checkbox-card input[type="checkbox"]:checked + span {
+  font-weight: bold;
+  color: #007D80;
+}
+
+.checkbox-card:has(input[type="checkbox"]:checked) {
+  border-color: #007D80;
+  background-color: #e5f8f8;
+}
+.champ-budget label {
+  display: block;
+}
+
+.optionnel {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+button {
+  background-color: #007D80;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  width: fit-content;
+}
+button:hover {
+  background-color: #09ccc2;
+}
+.intro {
+  text-align: center;
+  background-color: #182727;
+  color: #FFFAF0;
+  padding: 4rem 2rem 2rem;
+  font-size: 3rem;
+}
+.intro span {
+  color: #09ccc2;
+}
 
 .site-footer {                                                   /* Footer */
     background-color: #182727;

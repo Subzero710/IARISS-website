@@ -47,17 +47,31 @@
         <input type="tel" id="tel" name="tel">
       </div>
       <div>
-        <label>Domaine d'application</label>
-        <div class="checkbox-group">
-          <label><input type="checkbox" name="domaines" value="Informatique & Réseaux"> Informatique & Réseaux</label>
-          <label><input type="checkbox" name="domaines" value="Mécanique"> Mécanique</label>
-          <label><input type="checkbox" name="domaines" value="ASE"> Automatique & Systèmes Embarqués</label>
-          <label><input type="checkbox" name="domaines" value="Textile"> Textile</label>
+        <label>Votre projet concerne</label>
+        <div class="checkbox-card-group">
+          <label class="checkbox-card">
+            <input type="checkbox" name="domaines" value="Informatique & Réseaux">
+            <span>💻 Informatique & Réseaux</span>
+          </label>
+          <label class="checkbox-card">
+            <input type="checkbox" name="domaines" value="Mécanique">
+            <span>⚙️ Mécanique</span>
+          </label>
+          <label class="checkbox-card">
+            <input type="checkbox" name="domaines" value="ASE">
+            <span>🔧 Automatique & Systèmes Embarqués</span>
+          </label>
+          <label class="checkbox-card">
+            <input type="checkbox" name="domaines" value="Textile">
+            <span>🧵 Textile</span>
+          </label>
         </div>
-      </div>
-      <div>
         <label for="projet">Description de votre projet</label>
         <textarea id="projet" name="projet" required></textarea>
+      </div>
+      <div class="champ-budget">
+        <label for="budget">Avez-vous un budget prévisionnel ? <span class="optionnel">(optionnel)</span></label>
+        <input type="text" id="budget" name="budget">
       </div>
       <button type="submit">Envoyer la demande</button>
     </form>
