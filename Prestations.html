@@ -140,7 +140,7 @@
          </div>
      </section>
       <section class="prestations">
-          <h2>Textile et Fibres</h2>
+          <h2> Textile et Fibres</h2>
           <div class="underline"></div>
        <div class="prestation">
          <h3 class="toggle">Recherche et Innovation   🔍</h3>
@@ -164,6 +164,12 @@
     chevron.addEventListener('click', (e) => {
       e.stopPropagation();
       const bloc = chevron.closest('.prestation');
+      bloc.classList.toggle('active');
+    });
+  });
+  document.querySelectorAll('.toggle').forEach((titre) => {
+    titre.addEventListener('click', () => {
+      const bloc = titre.closest('.prestation');
       bloc.classList.toggle('active');
     });
   });

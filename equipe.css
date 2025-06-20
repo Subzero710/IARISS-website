@@ -200,3 +200,27 @@ body {
     padding-top: 1rem;
     font-size: 0.8rem;
   }
+  /* --- Responsive for laptop 15–17 --- */
+@media (min-width: 768px) and (max-width: 1700px) {
+  .intro {
+    font-size: 2rem;
+  }
+    .image img {
+        max-width : 25rem;
+    }
+  h3{
+    font-size: 2rem;
+  }
+  .texte{
+    padding: 2rem;
+  }
+  ul{
+    font-size: 1.5rem;
+  }
+  .equipe-quinconce{
+    max-width : 75%;
+  }
+    .site-footer{
+        font-size : 1.2rem;
+    }
+}

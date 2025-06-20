@@ -298,44 +298,6 @@
   transform: rotate(180deg);
 }
 
-/* --- Responsive pour mobiles --- */
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-
-  .intro {
-    margin: 1rem;
-    font-size: 1.4rem;
-    border-radius: 20px;
-  }
-
-  .valeur p {
-    font-size: 1.2rem;
-  }
-
-  .liste-valeurs {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .domaines {
-    grid-template-columns: 1fr;
-  }
-  .nav a {
-      margin-left: 1rem;
-      font-size: 0.9rem;
-    }
-
-  .domaine {
-    font-size: 1.2rem;
-  }
-
-  .conclusion {
-    font-size: 1.5rem;
-  }
-}
-
 /* --- Responsive for laptop 15–17 --- */
 @media (min-width: 768px) and (max-width: 1700px) {
   .intro {
@@ -368,12 +330,20 @@
       margin: 1rem 0;
       padding-left: 1.2rem;
     }
+    .valeurs h2{
+        font-size: 4rem;
+    }
+
     .valeur p {
     font-size: 1.3rem;
     }
 
+    .valeur h3{
+        font-size : 1.8rem;
+    }
+
     .conclusion {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     padding: 1rem;
     }
 
@@ -381,8 +351,6 @@
     line-height: 2.5rem;
     margin-top: 1rem;
     }
-
-
 
     .domaines-quinconce {
       display: flex;
@@ -426,4 +394,7 @@
     .texte h4 {
       font-weight: bold;
       font-size: 1.6rem;
+    }
+    .site-footer{
+        font-size : 1.2rem;
     }
