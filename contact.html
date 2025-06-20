@@ -118,22 +118,29 @@
 <script>
 document.getElementById("devis-form").addEventListener("submit", function(e) {
   e.preventDefault();
-  const data = new URLSearchParams();
-  data.append("entreprise", document.getElementById("entreprise").value);
-  data.append("nom", document.getElementById("nom").value);
-  data.append("email", document.getElementById("email").value);
-  data.append("tel", document.getElementById("tel").value);
-  data.append("domaines", [...document.querySelectorAll("input[name='domaines']:checked")].map(e => e.value).join(", "));
-  data.append("projet", document.getElementById("projet").value);
-  data.append("budget", document.getElementById("budget").value);
 
-  fetch("https://script.google.com/macros/s/AKfycbyhNN7ETaLwrzKZITeHMVuLguZiq5Ceu7czgye6OJ5mD77uOmN8RFVa0pzvGsN3XFFxyA/exec", {
+  const data = {
+    entreprise: document.getElementById("entreprise").value,
+    nom: document.getElementById("nom").value,
+    email: document.getElementById("email").value,
+    tel: document.getElementById("tel").value,
+    domaines: [...document.querySelectorAll("input[name='domaines']:checked")].map(e => e.value).join(", "),
+    projet: document.getElementById("projet").value,
+    budget: document.getElementById("budget").value
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbyWF8SHofStJxK466JkruTKq0PnfGyyZNVIBTHKo_crY5yiSIMlB3NMP4sSqpFgAuqf/exec", {
     method: "POST",
-    mode: "no-cors",
-    body: data
-  });
-
-  alert("Votre demande a été envoyée !");
+    headers: {
+      "Content-Type": "text/plain;charset=utf-8"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(() => {
+    alert("Votre demande a été envoyée !");
+    form.reset();
+  })
+  .catch(() => alert("Erreur lors de l'envoi de la demande."));
 });
 </script>
 
