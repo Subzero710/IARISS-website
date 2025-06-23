@@ -276,4 +276,124 @@ button:hover {
     .site-footer{
         font-size : 1.2rem;
     }
-   }
+}
+@media (max-width: 768px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 1.2vw;
+  background-color: #FFFAF0;
+}
+
+                                        /* Header */
+.site-header {
+  position: fixed;
+  height: 8vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FFFAF0;
+  box-shadow: 0 0.3vw 1vw rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.site-header .container {
+  padding: 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo a {
+  font-size: 3vw;
+  font-weight: bold;
+  color: #007D80;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.logo img {
+  height: 6vw;
+}
+
+.nav {
+  gap: 2vw;
+}
+
+.nav a {
+  font-size: 2.4vw;
+}
+
+.btn-contact {
+  padding: 0.8vw 1.5vw;
+  border-radius: 0.5vw;
+  font-size: 2vw;
+}
+                                                /* Main Content */
+
+                                                /* Footer */
+.site-footer {
+  padding: 2vw;
+  font-size: 2vw;
+}
+
+.site-footer .container {
+  max-width: 90vw;
+  padding-top: 2vw;
+}
+
+.footer-column {
+  min-width: 30vw;
+  padding-top: 1vw;
+  margin: 1vw 0;
+}
+
+.footer-logo {
+  width: 12vw;
+  margin-bottom: 1vw;
+}
+
+.slogan {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+.social-icons a {
+  margin-right: 1vw;
+}
+
+.social-icons img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.5vw;
+  font-size: 4vw;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5vw;
+}
+
+.footer-column ul li a {
+  font-size: 2vw;
+}
+
+.footer-bottom {
+  margin-top: 2vw;
+  border-top: 0.1vw solid #2b252555;
+  padding-top: 1vw;
+  font-size: 2vw;
+}
+}
